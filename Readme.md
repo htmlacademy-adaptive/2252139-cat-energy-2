@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Муса Исмаилов](https://up.htmlacademy.ru/adaptive-individual/2/user/2252139).
-* Наставник: `Малик Киров`.
+* Наставник: [Малик Киров](https://htmlacademy.ru/profile/id17217).
 
 ---
 
