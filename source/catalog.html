@@ -68,7 +68,7 @@
               PRO
               500 г
             </h3>
-            <dl class="product-card__card-characteristics">
+            <dl class="product-card__card-characteristics card-characteristics">
               <div class="card-characteristics__container">
                 <dt class="card-characteristics__description">
                   Масса
@@ -109,7 +109,7 @@
               PRO
               1000 г
             </h3>
-            <dl class="product-card__card-characteristics">
+            <dl class="product-card__card-characteristics card-characteristics">
               <div class="card-characteristics__container">
                 <dt class="card-characteristics__description">
                   Масса
@@ -149,7 +149,7 @@
               PRO
               500 г
             </h3>
-            <dl class="product-card__card-characteristics">
+            <dl class="product-card__card-characteristics card-characteristics">
               <div class="card-characteristics__container">
                 <dt class="card-characteristics__description">
                   Масса
@@ -190,7 +190,7 @@
               PRO
               1000 г
             </h3>
-            <dl class="product-card__card-characteristics">
+            <dl class="product-card__card-characteristics card-characteristics">
               <div class="card-characteristics__container">
                 <dt class="card-characteristics__description">
                   Масса
@@ -230,7 +230,7 @@
               SLIM
               500 г
             </h3>
-            <dl class="product-card__card-characteristics">
+            <dl class="product-card__card-characteristics card-characteristics">
               <div class="card-characteristics__container">
                 <dt class="card-characteristics__description">
                   Масса
@@ -271,7 +271,7 @@
               SLIM
               1000 г
             </h3>
-            <dl class="product-card__card-characteristics">
+            <dl class="product-card__card-characteristics card-characteristics">
               <div class="card-characteristics__container">
                 <dt class="card-characteristics__description">
                   Масса
@@ -311,7 +311,7 @@
               SLIM
               500 г
             </h3>
-            <dl class="product-card__card-characteristics">
+            <dl class="product-card__card-characteristics card-characteristics">
               <div class="card-characteristics__container">
                 <dt class="card-characteristics__description">
                   Масса
@@ -343,13 +343,13 @@
           </li>
           <li class="catalog-products__product-card card-more">
             <div class="catalog-products__img-plus"></div>
-            <h3 class="product-card__title card-more__title">
+            <h3 class="card-more__title">
               Показать еще 100500 товаров
             </h3>
             <p class="card-more__description">
               На самом деле вкусов гораздо больше!
             </p>
-            <button class="card-more__button button" type="button">
+            <button class="card-more__button button button--more" type="button">
           </li>
         </ul>
       </div>
@@ -430,7 +430,7 @@
         <h2 class="news__title">
           Акции и новинки
         </h2>
-        <p class="mews__description">
+        <p class="news__description">
           Подпишитесь на наши новости и не пропустите ни одного предложения!
         </p>
         <form class="news__form" action="https://echo.htmlacademy.ru" method="post">
@@ -455,7 +455,11 @@
           Конюшенная, д. 19/8
           Санкт-Петербург
         </address>
-        <img class="location__map" src="#" width="320" height="362" alt="карта питера с отмеченным магазином">
+        <picture>
+          <source media="(min-width:1200px)" width="1440" height="400" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" type="image/png">
+          <source media="(min-width:768px)" width="768" height="400" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" type="image/png">
+          <img class="location__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="карта питера с отмеченным магазином">
+        </picture>
       </div>
     </section>
   </main>
