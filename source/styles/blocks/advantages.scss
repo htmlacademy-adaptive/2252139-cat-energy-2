@@ -9,3 +9,59 @@
 .advantages__item {
   list-style: none;
 }
+
+.advantages__item--nutritious::before {
+  background-image: url("../../icons/stack.svg#leaf-mobile");
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+
+  @media (min-width: 768px) {
+    background-image: url("../../icons/stack.svg#leaf");
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.advantages__item--water::before {
+  background-image: url("../../icons/stack.svg#boiling-mobile");
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+
+  @media (min-width: 768px) {
+    background-image: url("../../icons/stack.svg#boiling");
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.advantages__item--food::before {
+  background-image: url("../../icons/stack.svg#devices-mobile");
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+
+  @media (min-width: 768px) {
+    background-image: url("../../icons/stack.svg#devices");
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.advantages__item--time::before {
+  background-image: url("../../icons/stack.svg#alarm-mobile");
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+
+  @media (min-width: 768px) {
+    background-image: url("../../icons/stack.svg#alarm");
+    width: 80px;
+    height: 80px;
+  }
+}

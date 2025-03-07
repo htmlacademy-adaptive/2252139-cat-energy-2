@@ -12,3 +12,11 @@
   list-style: none;
   text-align: center;
 }
+
+.main-nav__toggle--on {
+  background-image: url("../../icons/stack.svg#burger");
+}
+
+.main-nav__toggle--off {
+  background-image: url("../../icons/stack.svg#obelisk");
+}

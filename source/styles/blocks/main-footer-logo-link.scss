@@ -1,4 +1,28 @@
 .main-footer-logo-link {
   font-size: 16px;
   line-height: 20px;
+
+  &::after {
+    mask-image: url("../../icons/stack.svg#logo-html");
+    content: "";
+    width: 27px;
+    height: 34px;
+    display: inline-block;
+    mask-size: auto;
+    background-color: #666666;
+    mask-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    background-color: #68b738;
+  }
+
+  &:focus::after {
+    background-color: #68b738;
+  }
+
+  &:active::after {
+    background-color: #68b738;
+    opacity: 30%;
+  }
 }
