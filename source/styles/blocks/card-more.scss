@@ -3,6 +3,23 @@
   line-height: 20px;
   color: #111111;
   font-family: "Oswald", sans-serif;
+
+  &::before {
+    background-image: url("../../icons/stack.svg#plus-mobile");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    content: "";
+
+    @media (min-width: 768px) {
+      background-image: url("../../icons/stack.svg#plus");
+      width: 60px;
+      height: 60px;
+      background-size: 60px 60px;
+    }
+  }
 }
 
 .card-more__description {
