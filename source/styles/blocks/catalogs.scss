@@ -9,6 +9,10 @@
   margin-bottom: 29px;
 }
 
+.catalogs {
+  margin-bottom: 20px;
+}
+
 .catalogs__item {
   list-style: none;
   background-color: #f2f2f2;
@@ -139,6 +143,10 @@
     right: 63px;
     left: auto;
   }
+
+  .catalogs {
+    margin-bottom: 45px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -182,5 +190,9 @@
     top: 47px;
     right: auto;
     left: 33px;
+  }
+
+  .catalogs {
+    margin-bottom: 71px;
   }
 }
