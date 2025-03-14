@@ -13,3 +13,124 @@
   font-family: "Oswald", sans-serif;
   margin: 0;
 }
+
+.choose {
+  margin-top: 27px;
+  position: relative;
+}
+
+.choose__description {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 302px;
+    background-image: url("../../images/cat-feed-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 320px 302px;
+    z-index: -2;
+    left: -20px;
+    top: -27px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/cat-feed-background-mobile@2x.jpg");
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 302px;
+    background-color: #68b738;
+    opacity: 85%;
+    z-index: -1;
+    left: -20px;
+    top: -27px;
+  }
+}
+
+@media (min-width: 768px) {
+  .choose__description {
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+    margin-left: 90px;
+  }
+
+  .choose__slogon {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 21px;
+  }
+
+  .choose__title {
+    color: #000000;
+    line-height: 60px;
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+
+  .choose {
+    margin-top: 51px;
+  }
+
+  .choose__button {
+    position: absolute;
+    top: 240px;
+    left: 120px;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .choose {
+    margin-top: 96px;
+    min-height: 470px;
+  }
+
+  .choose__button {
+    left: 190px;
+  }
+
+  .choose__img {
+    position: absolute;
+    top: -81px;
+    right: 331px;
+  }
+
+  .choose__description {
+    &::after {
+      display: block;
+      width: 720px;
+      height: 694px;
+      top: -224px;
+      left: auto;
+      right: -110px;
+    }
+
+    &::before {
+      display: block;
+      width: 720px;
+      height: 694px;
+      top: -224px;
+      right: -110px;
+      left: auto;
+      background-size: cover;
+      background-image: url("../../images/cat-feed-background-desktop@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/cat-feed-background-desktop@1x.jpg");
+      }
+    }
+  }
+}

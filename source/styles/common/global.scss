@@ -6,6 +6,8 @@ body {
   line-height: 18px;
   font-family: "Lato", sans-serif;
   background-color: #ffffff;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -17,4 +19,29 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 704px;
+  }
+
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1220px;
+  }
+
+  body {
+    width: 1440px;
+  }
 }

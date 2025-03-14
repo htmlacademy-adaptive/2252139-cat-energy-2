@@ -10,13 +10,78 @@
 
 .main-nav__item {
   list-style: none;
-  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav__toggle--on {
   background-image: url("../../icons/stack.svg#burger");
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
 }
 
 .main-nav__toggle--off {
   background-image: url("../../icons/stack.svg#obelisk");
+  background-size: 18px 18px;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+
+.main-nav__logo-link {
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-between;
+}
+
+.main-nav__list {
+  padding: 0;
+  position: absolute;
+  width: 320px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    position: static;
+    margin: 0;
+    min-width: 436px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav__list {
+    min-width: 475px;
+  }
+
+  .main-nav__item a {
+    font-size: 20px;
+    line-height: 100%;
+    color: #ffffff;
+  }
 }
