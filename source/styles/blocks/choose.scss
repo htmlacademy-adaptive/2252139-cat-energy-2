@@ -17,6 +17,7 @@
 .choose {
   margin-top: 27px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .choose__description {
@@ -80,6 +81,7 @@
 
   .choose {
     margin-top: 51px;
+    margin-bottom: 0;
   }
 
   .choose__button {
@@ -96,6 +98,7 @@
   .choose {
     margin-top: 96px;
     min-height: 470px;
+    margin-bottom: 82px;
   }
 
   .choose__button {
@@ -132,5 +135,6 @@
         background-image: url("../../images/cat-feed-background-desktop@1x.jpg");
       }
     }
+    margin-left: 80px;
   }
 }
