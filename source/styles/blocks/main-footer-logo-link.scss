@@ -1,6 +1,9 @@
 .main-footer-logo-link {
   font-size: 16px;
   line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &::after {
     mask-image: url("../../icons/stack.svg#logo-html");

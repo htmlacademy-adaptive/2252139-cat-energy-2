@@ -7,6 +7,10 @@
   margin-bottom: 40px;
 }
 
+.advantages {
+  margin-bottom: 49px;
+}
+
 .advantages__item {
   list-style: none;
   max-width: 200px;
@@ -115,5 +119,15 @@
   .advantages__item::before {
     left: 0;
     top: 40px;
+  }
+
+  .advantages {
+    margin-bottom: 47px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages {
+    margin-bottom: 69px;
   }
 }

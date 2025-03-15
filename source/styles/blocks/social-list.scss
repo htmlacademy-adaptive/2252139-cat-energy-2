@@ -42,3 +42,15 @@
     opacity: 30%;
   }
 }
+
+.social-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 132px;
+}
+
+.social-list__item {
+  margin-right: 24px;
+}

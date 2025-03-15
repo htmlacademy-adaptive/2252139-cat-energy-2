@@ -4,9 +4,53 @@
   color: #111111;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+  margin: 0;
+  flex-shrink: 0;
 }
 
 .location__adress {
   line-height: 20px;
   font-style: normal;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.location__conteiner-description {
+  display: flex;
+  padding: 26px 0;
+}
+
+@media (min-width: 768px) {
+  .location__conteiner-description {
+    padding: 60px 0;
+  }
+
+  .location__adress {
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .location__description {
+    font-size: 20px;
+    line-height: 26px;
+    min-width: 163px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .location__conteiner-description {
+    padding: 60px 79px;
+    position: absolute;
+    background-color: #ffffff;
+    top: 95px;
+    left: 110px;
+  }
+
+  .location {
+    position: relative;
+  }
+
+  .location__description {
+    margin-right: 87px;
+  }
 }
