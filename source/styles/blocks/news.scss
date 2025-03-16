@@ -18,3 +18,19 @@
   line-height: 30px;
   color: #444444;
 }
+
+.news {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .news {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .news {
+    margin-bottom: 104px;
+  }
+}
