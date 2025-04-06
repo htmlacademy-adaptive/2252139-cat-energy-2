@@ -17,19 +17,21 @@
   <header class="header">
     <div class="container">
       <nav class="main-nav main-nav__toggle--on">
-        <a class="main-nav__logo-link" href="#">
-          <picture>
-            <source media="(min-width: 1200px)" width="70" height="59" type="image/svg+xml" srcset="images/cat-logo-desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/cat-logo-tablet.svg">
-            <img class="header__logo-img" src="images/cat-logo-mobile.svg" alt="логотип сайта" width="33" height="38">
-          </picture>
-        </a>
-        <a class="header__logo-text-link" href="#">
-          <picture>
-            <source media="(min-width:1200px)" width="118" height="21" type="image/svg+xml" srcset="images/cat-logo-text-desktop.svg">
-            <img class="header__logo-text logo-text" src="images/cat-logo-text.svg" alt="текстовый логотип сайта" width="101" height="18">
-          </picture>
-        </a> <!-- узнать как сделать одной фоткой  -->
+        <div class="main-nav__logo-container">
+          <a class="main-nav__logo-link" href="#">
+            <picture>
+              <source media="(min-width: 1200px)" width="70" height="59" type="image/svg+xml" srcset="images/cat-logo-desktop.svg">
+              <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/cat-logo-tablet.svg">
+              <img class="header__logo-img" src="images/cat-logo-mobile.svg" alt="логотип сайта" width="33" height="38">
+            </picture>
+          </a>
+          <a class="header__logo-text-link" href="#">
+            <picture>
+              <source media="(min-width:1200px)" width="118" height="21" type="image/svg+xml" srcset="images/cat-logo-text-desktop.svg">
+              <img class="header__logo-text logo-text" src="images/cat-logo-text.svg" alt="текстовый логотип сайта" width="101" height="18">
+            </picture>
+          </a> <!-- узнать как сделать одной фоткой  -->
+        </div>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">
             Переключатель меню
