@@ -1,9 +1,10 @@
 .header__logo-text-link {
-  margin-left: 56px;
+  display: block;
 }
 
 .header {
   padding: 13px 0 14px;
+  position: relative;
 }
 
 @media (min-width: 768px) {
