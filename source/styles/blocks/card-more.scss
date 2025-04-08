@@ -3,6 +3,10 @@
   line-height: 20px;
   color: #111111;
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 78px;
+  margin-bottom: 8px;
 
   &::before {
     background-image: url("../../icons/stack.svg#plus-mobile");
@@ -12,12 +16,17 @@
     height: 30px;
     position: absolute;
     content: "";
+    left: 125px;
+    top: 25px;
 
     @media (min-width: 768px) {
       background-image: url("../../icons/stack.svg#plus");
       width: 60px;
       height: 60px;
       background-size: 60px 60px;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
@@ -25,4 +34,50 @@
 .card-more__description {
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.card-more {
+  text-align: center;
+  position: relative;
+}
+
+.card-more__button {
+  width: 100%;
+  background-color: #f2f2f2;
+  color: #444444;
+}
+
+@media (min-width: 768px) {
+  .card-more {
+    border: 2px solid #f2f2f2;
+    box-sizing: border-box;
+    background-color: #ffffff;
+  }
+
+  .card-more__title {
+    margin: 0 auto;
+    margin-top: 160px;
+    width: 134px;
+    margin-bottom: 23px;
+  }
+
+  .card-more__description {
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 82px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-more__button {
+    padding: 10px 0;
+  }
+
+  .card-more__title::before {
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
