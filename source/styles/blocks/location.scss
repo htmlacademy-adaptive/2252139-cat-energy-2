@@ -20,6 +20,14 @@
   padding: 26px 0;
 }
 
+.location__map {
+  display: block;
+}
+
+.location {
+  background-color: #f2f2f2;
+}
+
 @media (max-width: 767px) {
   .location__adress br:last-child {
     display: none;

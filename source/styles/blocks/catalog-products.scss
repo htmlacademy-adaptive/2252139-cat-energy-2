@@ -8,6 +8,11 @@
   font-weight: 400;
 }
 
+.catalog-products__img-mini,
+.catalog-products__img {
+  display: block;
+}
+
 @media (max-width: 767px) {
   .catalog-products__title {
     position: relative;
@@ -81,6 +86,7 @@
 
   .catalog-products__list {
     grid-template-columns: repeat(4, 245px);
+    gap: 144px 80px;
   }
 
   .catalog-products__title {
