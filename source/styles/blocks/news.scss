@@ -3,6 +3,21 @@
   line-height: 24px;
   font-family: "Oswald", sans-serif;
   color: #000000;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 32px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 9px;
+    left: 212px;
+    right: -20px;
+    height: 2px;
+    background-color: #68b738;
+    z-index: -1;
+  }
 }
 
 .news__description {
@@ -10,13 +25,31 @@
   line-height: 24px;
   color: #000000;
   font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .news__input {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
+  text-transform: uppercase;
   color: #444444;
+  width: 100%;
+  padding: 13px;
+  box-sizing: border-box;
+  border-radius: 0%;
+  border: 1px solid #cdcdcd;
+  margin-bottom: 16px;
+  height: 56px;
+}
+
+.news__button {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .news {
@@ -27,10 +60,66 @@
   .news {
     margin-bottom: 80px;
   }
+
+  .news__title {
+    padding: 0 40px;
+    background-color: #ffffff;
+    width: max-content;
+    margin-bottom: 66px;
+
+    &::before {
+      right: -506px;
+      left: -30px;
+    }
+  }
+
+  .news__description {
+    font-size: 24px;
+    line-height: 32px;
+    width: 632px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+
+  .news__input {
+    width: 376px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .news__button {
+    width: 256px;
+  }
+
+  .news__form {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1200px) {
   .news {
     margin-bottom: 104px;
+  }
+
+  .news__title {
+    margin-left: -40px;
+    margin-bottom: 72px;
+    font-size: 40px;
+    line-height: 40px;
+
+    &::before {
+      left: -110px;
+      right: -1163px;
+    }
+  }
+
+  .news__description {
+    width: max-content;
+  }
+
+  .news__input {
+    width: 496px;
   }
 }
