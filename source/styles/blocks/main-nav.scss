@@ -39,7 +39,7 @@
   background-size: 24px 24px;
 }
 
-.main-nav__toggle--off .main-nav__toggle {
+.main-nav--off .main-nav__toggle {
   width: 18px;
   height: 18px;
   background-image: url("../../icons/stack.svg#obelisk");
@@ -47,7 +47,7 @@
 }
 
 @media (max-width: 767px) {
-  .main-nav__toggle--on .main-nav__list {
+  .main-nav--on .main-nav__list {
     display: none;
   }
 }
@@ -95,6 +95,13 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  .main-nav__item--active {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #68b738;
+    text-decoration-thickness: 2px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -108,11 +115,39 @@
     color: #ffffff;
   }
 
+  .main-nav__item {
+    &:hover {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+  }
+
+  .main-nav__item--active {
+    text-decoration-color: #ffffff;
+  }
+
+  .main-nav__list-catalog .main-nav__item--active {
+    text-decoration-color: #68b738;
+  }
+
   .main-nav__item--catalog a {
     color: #000000;
   }
 
   .main-nav__list-catalog a {
     color: #111111;
+  }
+
+  .main-nav__logo-container {
+    &:hover {
+      opacity: 80%;
+    }
+
+    &:active {
+      opacity: 60%;
+    }
   }
 }

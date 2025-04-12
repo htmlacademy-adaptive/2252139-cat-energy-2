@@ -117,13 +117,20 @@
 }
 
 .example__slids {
-  width: 280px;
-  height: 256px;
-  display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .example__slide {
+  top: 0;
+  left: 0;
   width: 50%;
+  height: 100%;
+}
+
+.example__slide-img {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -203,6 +210,7 @@
 
   .example__simple-container {
     width: 436px;
+    margin-bottom: 75px;
   }
 
   .example__title {
@@ -236,5 +244,9 @@
   .example__expenses span {
     margin: 0;
     margin-right: 63px;
+  }
+
+  .example__indicator span {
+    background-color: #f2f2f2;
   }
 }

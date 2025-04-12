@@ -4,10 +4,58 @@
 }
 
 .main-footer__logo-text-link {
-  margin: 0 auto;
-  display: block;
+  mask-image: url("../../icons/stack.svg#cat-logo-text-footer");
+  content: "";
+  mask-position: auto;
+  mask-repeat: no-repeat;
   width: 128px;
-  margin-bottom: 20px;
+  height: 24px;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  background-color: #111111;
+
+  &:hover {
+    background-color: #3e3e3e;
+  }
+
+  &:focus-visible {
+    background-color: #3e3e3e;
+  }
+
+  &:active {
+    background-color: #6b6b6b;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-footer__logo-text-link {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: -76px;
+      right: -76px;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+  }
+
+  .main-footer__social-list {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: -76px;
+      right: -76px;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+  }
 }
 
 .main-footer__logo-text {

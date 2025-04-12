@@ -39,9 +39,30 @@
   padding: 13px;
   box-sizing: border-box;
   border-radius: 0%;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
   margin-bottom: 16px;
   height: 56px;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #444444;
+  }
+}
+
+.news__input--error {
+  border: 2px solid #ff8282;
+
+  &:hover {
+    border: 2px solid #ff8282;
+  }
+
+  &:focus-visible {
+    border: 2px solid #ff8282;
+    outline: none;
+  }
 }
 
 .news__button {
