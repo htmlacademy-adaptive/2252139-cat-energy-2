@@ -59,7 +59,7 @@
 
   &::after {
     content: "";
-    background-color: #666666;
+    background: linear-gradient(to top, #666666 0, #666666 108px, transparent 108px, transparent 148px, #666666 148px, #666666 256px);
     position: absolute;
     width: 4px;
     height: 256px;
@@ -71,6 +71,23 @@
 
     @media (min-width: 768px) {
       height: 512px;
+      background: linear-gradient(to top, #666666 0, #666666 236px, transparent 236px, transparent 276px, #666666 276px, #666666 512px);
+    }
+  }
+
+  &:hover::after {
+    background: linear-gradient(to top, #68b738 0, #68b738 108px, transparent 108px, transparent 148px, #68b738 148px, #68b738 256px);
+
+    @media (min-width: 768px) {
+      background: linear-gradient(to top, #68b738 0, #68b738 236px, transparent 236px, transparent 276px, #68b738 276px, #68b738 512px);
+    }
+  }
+
+  &:active::after {
+    background: linear-gradient(to top, #5eaa2f 0, #5eaa2f 108px, transparent 108px, transparent 148px, #5eaa2f 148px, #5eaa2f 256px);
+
+    @media (min-width: 768px) {
+      background: linear-gradient(to top, #68b738 0, #68b738 236px, transparent 236px, transparent 276px, #68b738 276px, #68b738 512px);
     }
   }
 }
