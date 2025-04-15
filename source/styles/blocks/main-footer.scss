@@ -12,8 +12,9 @@
   height: 24px;
   display: inline-block;
   margin: 0 auto;
-  margin-bottom: 22px;
+  margin-bottom: 19px;
   background-color: #111111;
+  position: relative;
 
   &:hover {
     background-color: #3e3e3e;
@@ -29,29 +30,25 @@
 }
 
 @media (max-width: 767px) {
-  .main-footer__logo-text-link {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -20px;
-      left: -76px;
-      right: -76px;
-      height: 1px;
-      background-color: #d9d9d9;
-    }
-  }
-
   .main-footer__social-list {
     position: relative;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: -20px;
-      left: -76px;
-      right: -76px;
+      bottom: -17px;
+      left: -74px;
+      right: -74px;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 45px;
+      left: -74px;
+      right: -74px;
       height: 1px;
       background-color: #d9d9d9;
     }
@@ -72,7 +69,7 @@
 }
 
 .main-footer__logo-link {
-  margin-top: 20px;
+  margin-top: 17px;
 }
 
 @media (min-width: 768px) {

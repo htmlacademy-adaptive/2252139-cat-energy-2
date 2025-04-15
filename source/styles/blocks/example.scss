@@ -120,7 +120,7 @@
 .example__indicators {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .example__indicator p {
@@ -138,12 +138,12 @@
   max-width: 87px;
   box-sizing: border-box;
   padding: 0 10px;
-  left: 0;
+  left: -2;
   right: 0;
   margin: 0 auto;
   position: absolute;
   background-color: #eaeaea;
-  bottom: -14px;
+  bottom: -13px;
   font-size: 12px;
   line-height: 12px;
 }
@@ -178,7 +178,7 @@
 }
 
 .example {
-  padding-bottom: 40px;
+  padding-bottom: 41px;
 }
 
 @media (min-width: 768px) {
