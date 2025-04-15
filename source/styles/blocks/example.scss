@@ -285,6 +285,7 @@
 
   .example__description {
     margin-bottom: 69px;
+    width: 434px;
   }
 
   .example__container-description {
@@ -293,7 +294,7 @@
   }
 
   .example__indicators {
-    margin-bottom: 55px;
+    margin-bottom: 58px;
   }
 
   .example__expenses {
@@ -304,10 +305,15 @@
 
   .example__expenses span {
     margin: 0;
-    margin-right: 63px;
+    margin-right: 66px;
   }
 
   .example__indicator span {
     background-color: #f2f2f2;
+    bottom: -2px;
+  }
+
+  .example__slids {
+    margin: 0;
   }
 }

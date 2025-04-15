@@ -137,6 +137,15 @@
 
   .advantages__list {
     display: flex;
+    padding-right: 0;
+  }
+
+  .advantages__item--time {
+    max-width: 245px;
+  }
+
+  .advantages__title {
+    margin-bottom: 33px;
   }
 }
 
