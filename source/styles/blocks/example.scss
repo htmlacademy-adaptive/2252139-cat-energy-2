@@ -208,6 +208,7 @@
   .example__description {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 54px;
 
     &::after {
       content: "";
@@ -233,7 +234,7 @@
     line-height: 14px;
     padding: 0 9px;
     max-width: max-content;
-    bottom: -5px;
+    bottom: 11px;
     background-color: #ffffff;
   }
 
@@ -244,7 +245,7 @@
 
   .example__container-description {
     display: flex;
-    margin-bottom: 99px;
+    margin-bottom: 88px;
   }
 
   .example__expenses {

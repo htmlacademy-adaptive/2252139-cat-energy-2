@@ -49,6 +49,11 @@
   display: flex;
   justify-content: space-between;
   width: 132px;
+
+  @media (min-width: 768px) {
+    width: 96px;
+    margin-top: 6px;
+  }
 }
 
 .social-list__item {

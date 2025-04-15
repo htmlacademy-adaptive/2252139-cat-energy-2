@@ -100,11 +100,16 @@
 
   .choose__button {
     position: absolute;
-    top: 240px;
+    top: 230px;
     left: 120px;
     padding: 14px 26px;
     font-size: 20px;
     line-height: 26px;
+    width: 242px;
+  }
+
+  .choose__img {
+    margin-bottom: 0;
   }
 }
 

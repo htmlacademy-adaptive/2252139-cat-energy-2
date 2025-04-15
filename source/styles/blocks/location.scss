@@ -32,12 +32,13 @@
 
 @media (min-width: 768px) {
   .location__conteiner-description {
-    padding: 60px 0;
+    padding: 60px 40px;
   }
 
   .location__adress {
     font-size: 16px;
     text-align: right;
+    margin-left: auto;
   }
 
   .location__description {

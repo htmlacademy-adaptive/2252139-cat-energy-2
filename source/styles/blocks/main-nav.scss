@@ -44,6 +44,7 @@
   height: 18px;
   background-image: url("../../icons/stack.svg#obelisk");
   background-size: 18px 18px;
+  margin-top: -5px;
 }
 
 @media (max-width: 767px) {
@@ -70,7 +71,7 @@
     width: 320px;
     margin: 0;
     left: 0;
-    bottom: -198px;
+    bottom: -199px;
     background-color: #ffffff;
     z-index: 10;
   }
@@ -89,16 +90,18 @@
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
+    margin-right: 4px;
+    margin-bottom: 1px;
   }
 
-  .main-nav__item {
+  .main-nav__item a {
     font-size: 18px;
     line-height: 24px;
   }
 
   .main-nav__item--active {
     text-decoration: underline;
-    text-underline-offset: 8px;
+    text-underline-offset: 11px;
     text-decoration-color: #68b738;
     text-decoration-thickness: 2px;
   }

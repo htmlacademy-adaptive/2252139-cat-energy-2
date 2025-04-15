@@ -21,14 +21,16 @@
   padding: 30px 20px 18px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 55px;
-    left: 20px;
-    right: 20px;
-    height: 1px;
-    background-color: #d9d9d9;
+  @media (max-width: 767px) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 55px;
+      left: 20px;
+      right: 20px;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
   }
 }
 
@@ -71,9 +73,9 @@
 
   @media (min-width: 768px) {
     background-image: url("../../icons/stack.svg#pumped-cat-tablet");
-    background-size: 268px 200px;
-    width: 268px;
-    height: 200px;
+    background-size: auto;
+    width: 277px;
+    height: 228px;
   }
 
   @media (min-width: 1200px) {
@@ -134,14 +136,14 @@
 
   @media (min-width: 768px) {
     top: 14;
-    left: 127px;
+    left: 133px;
   }
 }
 
 @media (min-width: 768px) {
   .catalogs__item {
     margin-bottom: 30px;
-    padding: 77px 0 53px 52px;
+    padding: 77px 0 59px 52px;
   }
 
   .catalogs__link {
@@ -150,13 +152,13 @@
     padding-right: 47px;
 
     &::after {
-      left: 142px;
+      left: 149px;
       top: 9px;
     }
   }
 
   .catalogs__description {
-    margin-bottom: 48px;
+    margin-bottom: 57px;
     width: 340px;
     font-size: 16px;
     line-height: 24px;
@@ -171,12 +173,12 @@
 
   .catalogs__title--massive::before {
     top: 81px;
-    right: 29;
+    right: 25px;
     left: auto;
   }
 
   .catalogs__title--thin::before {
-    top: 91px;
+    top: 81px;
     right: 63px;
     left: auto;
   }
@@ -255,9 +257,19 @@
 }
 
 .catalogs__link--massive::after {
-  left: 114px;
+  left: 124px;
 }
 
 .catalogs__link--massive::before {
   left: 98px;
+}
+
+@media (min-width: 768px) {
+  .catalogs__link--massive::after {
+    left: 145px;
+  }
+
+  .catalogs__link--massive::before {
+    left: 129px;
+  }
 }
