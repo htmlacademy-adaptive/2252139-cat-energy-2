@@ -5,14 +5,14 @@
   color: #000000;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    bottom: 9px;
-    left: 212px;
+    bottom: 13px;
+    left: 192px;
     right: -20px;
     height: 2px;
     background-color: #68b738;
@@ -87,10 +87,13 @@
     background-color: #ffffff;
     width: max-content;
     margin-bottom: 66px;
+    font-size: 32px;
+    line-height: 32px;
 
     &::before {
       right: -506px;
       left: -30px;
+      bottom: 16px;
     }
   }
 
@@ -133,6 +136,7 @@
     &::before {
       left: -110px;
       right: -1163px;
+      bottom: 20px;
     }
   }
 

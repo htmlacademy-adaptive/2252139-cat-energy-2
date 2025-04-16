@@ -8,6 +8,18 @@
   position: relative;
 }
 
+.header__logo-text--catalog {
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.catalog .header__logo-text-link {
+  @media (max-width: 767px) {
+    margin-top: 2px;
+  }
+}
+
 @media (min-width: 768px) {
   .header__logo-text-link {
     margin-left: 13px;

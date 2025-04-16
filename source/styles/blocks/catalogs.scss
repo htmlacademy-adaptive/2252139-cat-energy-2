@@ -277,3 +277,10 @@
     left: 129px;
   }
 }
+
+
+@media (max-width: 767px) {
+  .catalogs__link--massive::after {
+    left: 114px;
+  }
+}

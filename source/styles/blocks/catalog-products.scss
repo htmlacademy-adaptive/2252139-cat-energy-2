@@ -4,7 +4,7 @@
   line-height: 36px;
   color: #000000;
   margin: 0;
-  padding: 27px 0 41px;
+  padding: 28px 0 42px;
   font-weight: 400;
 }
 
@@ -26,10 +26,21 @@
       height: 1px;
       background-color: #ebebeb;
     }
+
+    &::before {
+      content: "";
+      background-color: #d9d9d9;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      left: -20px;
+      right: -20px;
+    }
   }
 
   .catalog-products__product-card {
     position: relative;
+    margin-bottom: 1px;
 
     &::after {
       content: "";
@@ -76,6 +87,8 @@
   .catalog-products__title {
     padding: 0;
     margin: 51px 0 165px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -95,5 +108,6 @@
 
   .catalog-products__product-card {
     width: 245px;
+    padding: 0 38px 40px;
   }
 }

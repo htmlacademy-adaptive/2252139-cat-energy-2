@@ -10,7 +10,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 9px;
+    bottom: 12px;
     left: 266px;
     right: -20px;
     height: 2px;
@@ -100,7 +100,7 @@
     &::before {
       left: -30px;
       right: -357px;
-      bottom: 13px;
+      bottom: 16px;
     }
   }
 
@@ -127,10 +127,22 @@
 
   .additionally__item h3 {
     margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additionally__item span {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .additionally__item-prise {
     margin-left: 49px;
+    margin-right: 3px;
+  }
+
+  .additionally__item-prise--water {
+    margin-left: 59px;
   }
 
   .additionally__item-price-container {
@@ -161,11 +173,13 @@
 
   .additionally__title {
     margin-left: -40px;
+    font-size: 40px;
+    line-height: 40px;
 
     &::before {
       left: -110px;
       right: -1024px;
-      bottom: 17px;
+      bottom: 20px;
     }
   }
 
@@ -196,7 +210,7 @@
 
   .additionally__item-price-container {
     margin: 0;
-    margin-left: 161px;
+    margin-left: 164px;
   }
 
   .additionally__item-price-container span {
