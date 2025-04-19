@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>404</title>
+  <title>cat-energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
@@ -14,26 +14,26 @@
     <div class="container">
       <nav class="main-nav main-nav--on">
         <div class="main-nav__logo-container">
-          <a class="main-nav__logo-link" href="#">
+          <a class="main-nav__logo-link" href="index.html">
             <picture>
               <source media="(min-width: 1200px)" width="70" height="59" type="image/svg+xml" srcset="images/cat-logo-desktop.svg">
               <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/cat-logo-tablet.svg">
               <img class="header__logo-img" src="images/cat-logo-mobile.svg" alt="логотип сайта" width="33" height="38">
             </picture>
           </a>
-          <a class="header__logo-text-link" href="#">
+          <a class="header__logo-text-link" href="index.html">
             <picture>
               <source media="(min-width:1200px)" width="118" height="21" type="image/svg+xml" srcset="images/cat-logo-text-desktop.svg">
               <img class="header__logo-text header__logo-text--catalog" src="images/cat-logo-text.svg" alt="текстовый логотип сайта" width="101" height="18">
             </picture>
-          </a> <!-- узнать как сделать одной фоткой  -->
+          </a>
         </div>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">
             Переключатель меню
           </span>
         </button>
-        <ul class="main-nav__list main-nav__list-catalog"> <!-- временно -->
+        <ul class="main-nav__list main-nav__list-catalog">
           <li class="main-nav__item">
             <a href="index.html">
               главная
@@ -54,7 +54,7 @@
     </div>
   </header>
   <main class="main-inner">
-    <section class="catalog-products">
+    <section class="catalog-products" data-test="catalog">
       <div class="container">
         <h1 class="catalog-products__title">
           Каталог продукции
@@ -397,7 +397,7 @@
         </ul>
       </div>
     </section>
-    <section class="additionally">
+    <section class="additionally" data-test="additional">
       <div class="container">
         <h2 class="additionally__title">
           Дополнительные товары
@@ -551,7 +551,7 @@
           </a>
         </li>
       </ul>
-      <a class="main-footer__logo-link main-footer-logo-link">
+      <a class="main-footer__logo-link main-footer-logo-link" href="https://htmlacademy.ru/intensive/adaptive">
         HTML Academy
       </a>
     </div>
