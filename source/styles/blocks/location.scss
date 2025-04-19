@@ -24,15 +24,15 @@
   display: block;
 }
 
-@media (max-width: 767px) {
-  .location__adress br:last-child {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
   .location__conteiner-description {
     padding: 60px 40px;
+  }
+
+  .location__double-space {
+    display: block;
+    content: "";
+    margin-bottom: 1em;
   }
 
   .location__adress {
