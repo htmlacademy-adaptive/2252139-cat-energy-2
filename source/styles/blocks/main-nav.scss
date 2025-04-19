@@ -64,6 +64,40 @@
   align-items: center;
 }
 
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  display: block;
+  position: static;
+}
+
+@media (max-width: 767px) {
+  .main-nav--nojs {
+    flex-wrap: wrap;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__item:last-child {
+    padding-bottom: 10px;
+    border-bottom: none;
+
+    &::after {
+      content: "";
+      background-color: #e6e6e6;
+      height: 1;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .main-nav__list {
     padding: 0;
