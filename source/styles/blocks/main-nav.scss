@@ -25,6 +25,31 @@
   .main-nav__item:last-child {
     border-bottom: 1px solid #e6e6e6;
   }
+
+  .main-nav--nojs .main-nav__item {
+    box-shadow: none;
+    position: relative;
+
+    &::after {
+      content: "";
+      background-color: #e6e6e6;
+      height: 1;
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      right: -20px;
+    }
+  }
+
+  .main-nav--nojs .main-nav__item:first-child::before {
+    content: "";
+    background-color: #e6e6e6;
+    height: 1;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    right: -20px;
+  }
 }
 
 .main-nav__toggle {
@@ -46,6 +71,10 @@
   background-image: url("../../icons/stack.svg#obelisk");
   background-size: 18px 18px;
   margin-top: -5px;
+}
+
+.main-nav__list {
+  row-gap: 10px;
 }
 
 @media (max-width: 767px) {
@@ -85,6 +114,7 @@
   .main-nav--nojs .main-nav__item:last-child {
     padding-bottom: 10px;
     border-bottom: none;
+    position: static;
 
     &::after {
       content: "";
@@ -122,10 +152,10 @@
     min-width: 436px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     list-style: none;
     margin-right: 4px;
     margin-bottom: 1px;
+    column-gap: 33px;
   }
 
   .main-nav__item a {
@@ -144,7 +174,9 @@
 @media (min-width: 1200px) {
   .main-nav__list {
     min-width: 475px;
+    max-width: 600px;
     margin-right: 2px;
+    row-gap: 15px;
   }
 
   .main-nav__item a {

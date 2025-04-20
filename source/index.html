@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -27,7 +27,7 @@
               <img class="header__logo-img" src="images/cat-logo-mobile.svg" alt="логотип сайта" width="33" height="38">
             </picture>
           </a>
-          <a class="header__logo-text-link" href="#">
+          <a class="header__logo-text-link" href="index.html">
             <picture>
               <source media="(min-width:1200px)" width="118" height="21" type="image/svg+xml" srcset="images/cat-logo-text-desktop.svg">
               <img class="header__logo-text logo-text" src="images/cat-logo-text.svg" alt="текстовый логотип сайта" width="101" height="18">
@@ -64,7 +64,7 @@
       <div class="container">
         <div class="choose__description">
           <h1 class="choose__title">
-            Функциональное <br>
+            Функциональное
             питание для котов
           </h1>
           <p class="choose__slogon">
@@ -217,11 +217,7 @@
           </address>
         </div>
       </div>
-      <picture>
-        <source media="(min-width:1200px)" width="1440" height="400" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" type="image/png">
-        <source media="(min-width:768px)" width="768" height="400" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" type="image/png">
-        <img class="location__map" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="карта питера с отмеченным магазином">
-      </picture>
+      <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989628721386!2d30.320832674763206!3d59.93879652957341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0xa24b26c0d196de71!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1745107390673!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
   <footer class="main-footer" data-test="footer">

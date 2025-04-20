@@ -29,10 +29,15 @@
     padding: 60px 40px;
   }
 
+  .location__map {
+    width: 768px;
+    height: 400px;
+  }
+
   .location__double-space {
     display: block;
     content: "";
-    margin-bottom: 1em;
+    margin-bottom: 20px;
   }
 
   .location__adress {
@@ -59,6 +64,11 @@
 
   .location {
     position: relative;
+  }
+
+  .location__map {
+    width: 1440px;
+    height: 400px;
   }
 
   .location__description {

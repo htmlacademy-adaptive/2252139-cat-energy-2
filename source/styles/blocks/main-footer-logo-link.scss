@@ -4,6 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
+  color: #444444;
 
   &::after {
     mask-image: url("../../icons/stack.svg#logo-html");
