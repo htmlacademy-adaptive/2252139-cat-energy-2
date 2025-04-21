@@ -278,6 +278,18 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1190px) {
+  .example::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    content: "";
+    background-color: #e6e6e6;
+    position: absolute;
+    height: 1px;
+  }
+}
+
 @media (min-width: 1200px) {
   .example {
     padding: 0;

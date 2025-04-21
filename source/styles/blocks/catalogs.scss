@@ -11,13 +11,13 @@
 }
 
 .catalogs {
-  margin-bottom: 21px;
+  margin-bottom: 24px;
 }
 
 .catalogs__item {
   list-style: none;
   background-color: #f2f2f2;
-  margin-bottom: 21px;
+  margin-bottom: 24px;
   padding: 30px 20px 18px;
   position: relative;
 }
@@ -145,7 +145,7 @@
 
 @media (min-width: 768px) {
   .catalogs__item {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     padding: 77px 0 59px 52px;
   }
 
@@ -192,7 +192,7 @@
   }
 
   .catalogs {
-    margin-bottom: 45px;
+    margin-bottom: 48px;
   }
 }
 
@@ -227,6 +227,15 @@
   .catalogs__link {
     font-size: 20px;
     line-height: 100%;
+
+    &::before {
+      margin-left: 26px;
+      transition: width 0.3s ease;
+    }
+  }
+
+  .catalogs__link--massive::before {
+    margin-left: 27px;
   }
 
   .catalogs__title--thin::before {
@@ -242,11 +251,7 @@
   }
 
   .catalogs {
-    margin-bottom: 71px;
-  }
-
-  .catalogs__link::before {
-    transition: width 0.3s ease;
+    margin-bottom: 73px;
   }
 
   .catalogs__link:hover::before {
