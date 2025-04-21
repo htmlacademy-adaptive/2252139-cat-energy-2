@@ -79,6 +79,7 @@
     grid-template-columns: repeat(2, 324px);
     gap: 60px;
     row-gap: 140px;
+    align-items: flex-start;
   }
 
   .catalog-products__product-card {
