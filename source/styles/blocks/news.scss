@@ -1,0 +1,150 @@
+.news__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 31px;
+  position: relative;
+  width: fit-content;
+  background-color: #ffffff;
+  box-shadow: -20px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 13px;
+    height: 2px;
+    width: 100vw;
+    right: 0;
+    background-color: #68b738;
+    z-index: -1;
+    box-shadow: 100vw 0 0 0 #68b738;
+  }
+}
+
+.news__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.news__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #444444;
+  width: 100%;
+  padding: 13px;
+  box-sizing: border-box;
+  border-radius: 0%;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 16px;
+  height: 56px;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #444444;
+  }
+}
+
+.news__input--error {
+  border: 2px solid #ff8282;
+
+  &:hover {
+    border: 2px solid #ff8282;
+  }
+
+  &:focus-visible {
+    border: 2px solid #ff8282;
+    outline: none;
+  }
+}
+
+.news__button {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.news {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .news {
+    margin-bottom: 80px;
+  }
+
+  .news__title {
+    padding: 0 40px;
+    background-color: #ffffff;
+    margin-bottom: 66px;
+    font-size: 32px;
+    line-height: 32px;
+    box-shadow: none;
+
+    &::before {
+      bottom: 16px;
+    }
+  }
+
+  .news__description {
+    font-size: 24px;
+    line-height: 32px;
+    width: 632px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+
+  .news__input {
+    width: 376px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .news__button {
+    width: 256px;
+  }
+
+  .news__form {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .news {
+    margin-bottom: 104px;
+  }
+
+  .news__title {
+    margin-left: -40px;
+    margin-bottom: 72px;
+    font-size: 40px;
+    line-height: 40px;
+
+    &::before {
+      bottom: 20px;
+    }
+  }
+
+  .news__description {
+    width: fit-content;
+  }
+
+  .news__input {
+    width: 496px;
+  }
+}

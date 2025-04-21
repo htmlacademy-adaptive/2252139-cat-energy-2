@@ -1,1 +1,48 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+
+body {
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Lato", "Arial", sans-serif;
+  background-color: #ffffff;
+  width: 320px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 708px;
+  }
+
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1220px;
+  }
+
+  body {
+    width: 1440px;
+  }
+}
