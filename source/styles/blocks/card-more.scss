@@ -2,7 +2,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #111111;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 57px;
@@ -41,6 +41,8 @@
 .card-more {
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-more__button {
@@ -77,9 +79,12 @@
   .card-more__description {
     width: 170px;
     margin: 0 auto;
-    margin-bottom: 82px;
     font-size: 16px;
     line-height: 18px;
+  }
+
+  .card-more__button {
+    margin-top: auto;
   }
 }
 
@@ -103,6 +108,6 @@
   }
 
   .card-more__description {
-    margin: 0 auto 90px;
+    margin: 0 auto;
   }
 }

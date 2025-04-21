@@ -1,7 +1,7 @@
 .catalogs__title {
   font-size: 24px;
   line-height: 37px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
   margin: 0;
@@ -20,18 +20,6 @@
   margin-bottom: 21px;
   padding: 30px 20px 18px;
   position: relative;
-
-  @media (max-width: 767px) {
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 55px;
-      left: 20px;
-      right: 20px;
-      height: 1px;
-      background-color: #d9d9d9;
-    }
-  }
 }
 
 .catalogs__list {
@@ -47,17 +35,33 @@
   margin: 0;
   width: 227px;
   margin-bottom: 42px;
+
+  @media (max-width: 767px) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -23px;
+      left: 0;
+      right: -13px;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+  }
 }
 
 .catalogs__link {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   line-height: 16px;
   text-decoration: none;
   position: relative;
-  padding-right: 37px;
   font-size: 16px;
+  display: flex;
+  align-items: flex-end;
+  width: max-content;
 }
 
 .catalogs__title--massive::before {
@@ -120,24 +124,23 @@
   mask-repeat: no-repeat;
   background-color: #000000;
   content: "";
-  position: absolute;
-  left: 118px;
-  top: 6px;
+  display: block;
+  order: 2;
+  flex-shrink: 0;
+  margin-left: -2px;
+  margin-bottom: 2px;
 }
 
 .catalogs__link::before {
   content: "";
-  height: 2px;
   width: 18px;
+  height: 2px;
   background-color: #000000;
-  position: absolute;
-  left: 102px;
-  top: 11px;
-
-  @media (min-width: 768px) {
-    top: 14;
-    left: 133px;
-  }
+  order: 1;
+  display: block;
+  flex-shrink: 0;
+  margin-left: 15px;
+  margin-bottom: 7px;
 }
 
 @media (min-width: 768px) {
@@ -151,9 +154,13 @@
     line-height: 100%;
     padding-right: 47px;
 
+    &::before {
+      margin-left: 25px;
+      margin-bottom: 9px;
+    }
+
     &::after {
-      left: 149px;
-      top: 9px;
+      margin-bottom: 4px;
     }
   }
 
@@ -169,6 +176,7 @@
     margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
+    width: 340px;
   }
 
   .catalogs__title--massive::before {
@@ -192,12 +200,14 @@
   .catalogs__item {
     width: 570px;
     margin: 0;
-    margin-right: 80px;
     padding-bottom: 61px;
+    box-sizing: border-box;
   }
 
   .catalogs__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
   }
 
   .catalogs__description {
@@ -233,14 +243,6 @@
 
   .catalogs {
     margin-bottom: 71px;
-  }
-
-  .catalogs__link::after {
-    transition: left 0.3s ease;
-  }
-
-  .catalogs__link:hover::after {
-    left: 159px;
   }
 
   .catalogs__link::before {

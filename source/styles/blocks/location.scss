@@ -2,7 +2,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #111111;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   margin: 0;
   flex-shrink: 0;
@@ -22,6 +22,11 @@
 
 .location__map {
   display: block;
+  width: 100vw;
+  transform: translateX(-50%);
+  left: 50%;
+  position: relative;
+  z-index: -1;
 }
 
 @media (min-width: 768px) {
@@ -30,7 +35,7 @@
   }
 
   .location__map {
-    width: 768px;
+    width: 100vw;
     height: 400px;
   }
 
@@ -67,7 +72,8 @@
   }
 
   .location__map {
-    width: 1440px;
+    min-width: 1440px;
+    width: 100vw;
     height: 400px;
   }
 

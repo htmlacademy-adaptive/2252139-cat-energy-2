@@ -1,12 +1,23 @@
 .main-footer {
   background-color: #f2f2f2;
   padding: 40px 0;
+  position: relative;
+
+  &::before {
+    height: 100%;
+    position: absolute;
+    content: "";
+    background-color: #f2f2f2;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    z-index: -1;
+  }
 }
 
 .main-footer__logo-text-link {
   mask-image: url("../../icons/stack.svg#cat-logo-text-footer");
-  content: "";
-  mask-position: auto;
   mask-repeat: no-repeat;
   width: 128px;
   height: 24px;
@@ -15,6 +26,8 @@
   margin-bottom: 19px;
   background-color: #111111;
   position: relative;
+  mask-clip: border-box;
+  flex-shrink: 0;
 
   &:hover {
     background-color: #3e3e3e;
@@ -46,7 +59,7 @@
     &::before {
       content: "";
       position: absolute;
-      bottom: 45px;
+      top: -20px;
       left: -74px;
       right: -74px;
       height: 1px;
@@ -70,6 +83,7 @@
 
 .main-footer__logo-link {
   margin-top: 17px;
+  flex-shrink: 0;
 }
 
 @media (min-width: 768px) {

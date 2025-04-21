@@ -47,15 +47,14 @@
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: space-between;
-  width: 132px;
+  gap: 24px;
+  max-width: 280px;
+  flex-wrap: wrap;
+  justify-content: center;
+
 
   @media (min-width: 768px) {
-    width: 96px;
+    max-width: none;
     margin-top: 6px;
   }
-}
-
-.social-list__item {
-  margin-right: 24px;
 }

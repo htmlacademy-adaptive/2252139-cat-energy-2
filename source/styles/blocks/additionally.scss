@@ -2,20 +2,24 @@
   font-size: 24px;
   line-height: 24px;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   margin: 25px 0 36px;
   font-weight: 400;
   position: relative;
+  width: fit-content;
+  box-shadow: -20px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
+  background-color: #ffffff;
 
   &::before {
     content: "";
     position: absolute;
     bottom: 12px;
-    left: 266px;
-    right: -20px;
     height: 2px;
     background-color: #68b738;
     z-index: -1;
+    width: 100vw;
+    right: 0;
+    box-shadow: 100vw 0 0 0 #68b738;
   }
 }
 
@@ -28,7 +32,7 @@
       position: absolute;
       bottom: -36;
       left: 0;
-      right: 0;
+      width: 280px;
       height: 1px;
       background-color: #cdcdcd;
     }
@@ -39,7 +43,7 @@
   font-size: 16px;
   line-height: 16px;
   color: #222222;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
@@ -95,11 +99,10 @@
     line-height: 32px;
     padding: 0 40px;
     background-color: #ffffff;
-    width: max-content;
+    width: fit-content;
+    box-shadow: none;
 
     &::before {
-      left: -30px;
-      right: -357px;
       bottom: 16px;
     }
   }
@@ -177,8 +180,6 @@
     line-height: 40px;
 
     &::before {
-      left: -110px;
-      right: -1024px;
       bottom: 20px;
     }
   }

@@ -2,7 +2,7 @@
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   margin: 0 auto;
   margin-bottom: 25px;
   font-weight: 400;
@@ -12,7 +12,7 @@
 .choose__slogon {
   line-height: 14px;
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   margin: 0;
   text-align: center;
   margin-bottom: 29px;
@@ -30,39 +30,6 @@
   margin-bottom: 20px;
 }
 
-.choose__description {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 320px;
-    height: 302px;
-    background-image: url("../../images/cat-feed-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 320px 302px;
-    z-index: -2;
-    left: -20px;
-    top: -27px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/cat-feed-background-mobile@2x.jpg");
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 320px;
-    height: 302px;
-    background-color: #68b738;
-    opacity: 85%;
-    z-index: -1;
-    left: -20px;
-    top: -27px;
-  }
-}
-
 @media (max-width: 767px) {
   .choose__button {
     margin-top: 3px;
@@ -73,13 +40,6 @@
 
 @media (min-width: 768px) {
   .choose__description {
-    &::after {
-      display: none;
-    }
-
-    &::before {
-      display: none;
-    }
     margin-left: 90px;
   }
 
@@ -149,27 +109,14 @@
 
   .choose__description {
     &::after {
+      transform-origin: left center;
       display: block;
       width: 720px;
       height: 694px;
       top: -224px;
       left: auto;
       right: -110px;
-    }
-
-    &::before {
-      display: block;
-      width: 720px;
-      height: 694px;
-      top: -224px;
-      right: -110px;
-      left: auto;
-      background-size: cover;
-      background-image: url("../../images/cat-feed-background-desktop@1x.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../images/cat-feed-background-desktop@1x.jpg");
-      }
+      background-position: left center;
     }
     margin-left: 80px;
   }

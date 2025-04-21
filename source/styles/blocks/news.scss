@@ -1,22 +1,26 @@
 .news__title {
   font-size: 24px;
   line-height: 24px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   font-weight: 400;
   margin: 0;
   margin-bottom: 31px;
   position: relative;
+  width: fit-content;
+  background-color: #ffffff;
+  box-shadow: -20px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
 
   &::before {
     content: "";
     position: absolute;
     bottom: 13px;
-    left: 192px;
-    right: -20px;
     height: 2px;
+    width: 100vw;
+    right: 0;
     background-color: #68b738;
     z-index: -1;
+    box-shadow: 100vw 0 0 0 #68b738;
   }
 }
 
@@ -24,13 +28,13 @@
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
   margin-bottom: 24px;
 }
 
 .news__input {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -85,14 +89,12 @@
   .news__title {
     padding: 0 40px;
     background-color: #ffffff;
-    width: max-content;
     margin-bottom: 66px;
     font-size: 32px;
     line-height: 32px;
+    box-shadow: none;
 
     &::before {
-      right: -506px;
-      left: -30px;
       bottom: 16px;
     }
   }
@@ -134,14 +136,12 @@
     line-height: 40px;
 
     &::before {
-      left: -110px;
-      right: -1163px;
       bottom: 20px;
     }
   }
 
   .news__description {
-    width: max-content;
+    width: fit-content;
   }
 
   .news__input {

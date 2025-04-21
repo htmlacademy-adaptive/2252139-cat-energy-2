@@ -1,5 +1,5 @@
 .catalog-products__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
@@ -52,6 +52,11 @@
       background-color: #ebebeb;
     }
   }
+
+  .catalog-products__img-mini,
+  .catalog-products__img {
+    margin: auto;
+  }
 }
 
 .catalog-products__list {
@@ -78,7 +83,7 @@
 
   .catalog-products__product-card {
     width: 324px;
-    height: 430px;
+    min-height: 430px;
     background-color: #f2f2f2;
     padding: 0 37px 40px;
     box-sizing: border-box;

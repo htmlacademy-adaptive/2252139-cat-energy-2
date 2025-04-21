@@ -1,5 +1,5 @@
 .main-nav__item a {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   color: #000000;
@@ -132,9 +132,10 @@
   .main-nav__list {
     padding: 0;
     position: absolute;
-    width: 320px;
+    width: 100vw;
+    transform: translateX(-50%);
+    left: 50%;
     margin: 0;
-    left: 0;
     bottom: -199px;
     background-color: #ffffff;
     z-index: 10;
