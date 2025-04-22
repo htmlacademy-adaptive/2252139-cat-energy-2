@@ -54,6 +54,11 @@
     opacity: 85%;
   }
 
+  @media (max-width: 767px) {
+    top: auto;
+    bottom: -302px;
+  }
+
   @media (min-width: 768px) {
     display: none;
   }

@@ -190,12 +190,18 @@
         <div class="example__slids">
           <div class="example__slide">
             <picture>
+              <source type="image/webp" media="(min-width:768px)" width="560" height="512" srcset="images/thick-cat-example@1x.webp 1x, images/thick-cat-example@2x.webp 2x">
+              <source type="image/webp" width="280" height="256" srcset="images/thick-cat-example-mobile@1x.webp 1x, images/thick-cat-example-mobile@2x.webp 2x">
+
               <source media="(min-width:768px)" width="560" height="512" srcset="images/thick-cat-example@1x.png 1x, images/thick-cat-example@2x.png 2x" type="image/png">
               <img class="example__slide-img" src="images/thick-cat-example-mobile@1x.png" width="280" height="256" alt="Кот до похудения" srcset="images/thick-cat-example-mobile@2x.png 2x">
             </picture>
           </div>
           <div class="example__slide example__slide--before">
             <picture>
+              <source type="image/webp" media="(min-width:768px)" width="560" height="512" srcset="images/skinny-cat-example@1x.webp 1x, images/skinny-cat-example@2x.webp 2x">
+              <source type="image/webp" width="280" height="256" srcset="images/skinny-cat-example-mobile@1x.webp 1x, images/skinny-cat-example-mobile@2x.webp 2x">
+
               <source media="(min-width:768px)" width="560" height="512" srcset="images/skinny-cat-example@1x.png 1x, images/skinny-cat-example@2x.png 2x" type="image/png">
               <img class="example__slide-img" src="images/skinny-cat-example-mobile@1x.png" width="280" height="256" alt="Кот после похудения" srcset="images/skinny-cat-example-mobile@2x.png 2x">
             </picture>
@@ -204,7 +210,7 @@
         </div>
       </div>
     </section>
-    <section class="location" data-test="contacts">
+    <section class="location location--nojs" data-test="contacts">
       <div class="container">
         <h2 class="visually-hidden">Карта</h2>
         <div class="location__conteiner-description">
@@ -219,6 +225,15 @@
         </div>
       </div>
       <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989628721386!2d30.320832674763206!3d59.93879652957341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0xa24b26c0d196de71!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1745107390673!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <picture>
+        <source type="image/webp" media="(min-width:1200px)" width="1440" height="400" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width:768px)" width="768" height="400" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
+        <source type="image/webp" width="320" height="362" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
+
+        <source media="(min-width:1200px)" width="1440" height="400" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" type="image/png">
+        <source media="(min-width:768px)" width="768" height="400" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" type="image/png">
+        <img class="location__map--nojs" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="карта питера с отмеченным магазином">
+      </picture>
     </section>
   </main>
   <footer class="main-footer" data-test="footer">

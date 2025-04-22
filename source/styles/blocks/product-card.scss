@@ -85,5 +85,17 @@
   .product-card__title {
     margin-bottom: 24px;
     margin-top: 0;
+
+    &:hover {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
   }
+}
+
+.product-card__link {
+  text-decoration: none;
 }

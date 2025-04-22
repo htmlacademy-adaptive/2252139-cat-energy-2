@@ -8,6 +8,18 @@
   flex-shrink: 0;
 }
 
+.location--nojs .location__map {
+  display: none;
+}
+
+.location__map--nojs {
+  display: none;
+}
+
+.location--nojs .location__map--nojs {
+  display: block;
+}
+
 .location__adress {
   line-height: 20px;
   font-style: normal;

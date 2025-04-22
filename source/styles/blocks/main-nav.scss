@@ -47,8 +47,9 @@
     height: 1;
     position: absolute;
     top: 0;
-    left: -20px;
-    right: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100vw;
   }
 }
 
@@ -101,6 +102,7 @@
   .main-nav--nojs .main-nav__list {
     display: block;
     position: static;
+    transform: none;
   }
 
   .main-nav--nojs {
@@ -109,10 +111,17 @@
 
   .main-nav--nojs .main-nav__item {
     display: block;
+
+    &::after {
+      right: auto;
+      left: 50%;
+      transform: translate(-50%);
+      width: 100vw;
+    }
   }
 
   .main-nav--nojs .main-nav__item:last-child {
-    padding-bottom: 10px;
+    padding-bottom: 14px;
     border-bottom: none;
     position: static;
 
@@ -120,10 +129,8 @@
       content: "";
       background-color: #e6e6e6;
       height: 1;
-      width: 100%;
       position: absolute;
       bottom: 0;
-      left: 0;
     }
   }
 }
