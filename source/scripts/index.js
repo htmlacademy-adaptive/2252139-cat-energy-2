@@ -1,10 +1,10 @@
 /* в этот файл добавляет скрипты*/
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
-const location = document.querySelector('.location');
+const locationElement = document.querySelector('.location');
 
 navMain.classList.remove('main-nav--nojs');
-location.classList.remove('location--nojs');
+locationElement.classList.remove('location--nojs');
 
 
 navToggle.addEventListener('click', () => {
