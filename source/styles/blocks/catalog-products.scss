@@ -116,4 +116,24 @@
     width: 245px;
     padding: 0 38px 40px;
   }
+
+  .catalog-products__img {
+    &:hover {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+  }
+
+  .catalog-products__img-mini {
+    &:hover {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+  }
 }
